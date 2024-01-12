@@ -22,7 +22,7 @@ async function create(req, res) {
     //         email: req.body.email
     //     }
     // });
-
+            console.log(req.body);
     try {
         // Add the User to the database
         const user = await User.create(req.body);
