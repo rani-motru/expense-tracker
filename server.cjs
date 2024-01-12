@@ -42,6 +42,10 @@ app.use('/api/users', require('./routes/api/users.cjs'));
 // const userRouter = require('./routes/api/users.cjs')
 // app.use('/api/user', userRouter);
 
+// Protect the API routes below from anonymous users
+const ensureLoggedIn = require('./config/ensureLoggedIn.cjs');
+app.use('/api/transaction', ensureLoggedIn, require('./routes/api/transaction.cjs'));
+
 // The following "catch all" route (note the /*) is necessary
 // to return the index.html on all non-AJAX requests
 app.get('/*', function(req, res) {

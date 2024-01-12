@@ -5,11 +5,11 @@ import LoginForm from '../components/LoginForm'
 function AuthPage(props) {
   return (
     <>
-    <h1>AuthPage</h1>
-     <SignUpForm setUser={props.setUser} />
-     <LoginForm setUser={props.setUser} />
-    </>
+    <h1>Welcome to Expen$e Tracker</h1>
+    <LoginForm setUser={props.setUser} />
+    <SignUpForm setUser={props.setUser}/>
    
+    </>
   )
 }
 

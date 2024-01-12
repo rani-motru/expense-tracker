@@ -20,18 +20,19 @@ import NavBar from '../components/NavBar';
 
 function App() {
   const [user, setUser] = useState(getUser());
-
+  const [active, setActive]=useState(1)
   // in here
   // use the useState hook to define a state variable called user
   // initialize that to null
   // the setter function should be named according to convention
+  
   return (
     <>
       {
         user
           ?
           <>
-            <NavBar user={user} setUser={setUser}/>
+            <NavBar user={user} setUser={setUser} active={active} setActive={setActive}/>
             < Routes >
               <Route path='/income' element={<Income />}/>
               <Route path='/expenses' element={<Expenses />}/>
