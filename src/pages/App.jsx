@@ -10,11 +10,13 @@ import './App.css'
 
 // import pages
 import AuthPage from './AuthPage';
-import NewOrderPage from './NewOrderPage';
-import OrderHistoryPage from './OrderHistoryPage';
-
+import Income from './Income';
+import Expenses from './Expenses';
+import ViewTransaction from './ViewTransaction';
+// import Graph from '../components/Graph.'
 // import components
 import NavBar from '../components/NavBar';
+// import Expense from '../../models/expense.cjs';
 
 function App() {
   const [user, setUser] = useState(getUser());
@@ -31,8 +33,9 @@ function App() {
           <>
             <NavBar user={user} setUser={setUser}/>
             < Routes >
-              <Route path='/orders/new' element={<NewOrderPage />}/>
-              <Route path='/orders' element={<OrderHistoryPage />}/>
+              <Route path='/income' element={<Income />}/>
+              <Route path='/expenses' element={<Expenses />}/>
+              <Route path='/transactions' element={<ViewTransaction />}/>
             </Routes>
           </>
           :
