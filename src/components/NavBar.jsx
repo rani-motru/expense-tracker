@@ -4,9 +4,10 @@ import styled from 'styled-components'
 import * as userService from '../utilities/users-services'
 import { menuItems } from '../utilities/menu'
 
-function NavBar(props,active, setActive) {
+function NavBar(props,{active, setActive}) {
   // console.log(props.user)
   // Add in functionality to log out
+  // const [active, setActive]=useState(1)
   function handleLogOut () {
     // Delegate to users-service
     userService.logOut();
@@ -22,8 +23,17 @@ function NavBar(props,active, setActive) {
         <Link to='/orders/new'>New Orders</Link>
         &nbsp; | &nbsp; */}
         <span>Welcome, {props.user.name}</span>
+        {/* &nbsp; | &nbsp; */}
+        {/* <Link to='/dashboard'> Dashboard</Link>
         &nbsp; | &nbsp;
-        <ul className="menu-items">
+        <Link to='/'> View Transaction</Link>
+        &nbsp; | &nbsp;
+        <Link to='/incomes'> Income</Link>
+        &nbsp; | &nbsp;
+        <Link to='/orders'>Expense</Link>
+        &nbsp; | &nbsp; */}
+        {/* below is commented to avoid setactive abend */} 
+           <ul className="menu-items">
                 {menuItems.map((item) => {
                     return <li
                         key={item.id}

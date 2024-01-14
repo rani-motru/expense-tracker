@@ -23,7 +23,7 @@
 
 import React from 'react';
 import styled from 'styled-components';
-import { useGlobalContext } from '../utilities/globalContext';
+import { useGlobalContext } from '../context/globalContext';
 import { checkToken } from '../utilities/users-services';
 
 function CombinedComponent() {

@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-// for styling i am using styled-component which is a popular librarry for styling
+// for styling i am using styled-component which is a popular library for styling
 // to use in import we have to install package 'npm  install styled-components'
 import styled from 'styled-components'
 // importing a date picker  to select the date 
 import DatePicker from 'react-datepicker'
 import "react-datepicker/dist/react-datepicker.css";
-import { useGlobalContext } from '../utilities/globalContext';
+import { useGlobalContext } from '../context/globalContext';
 import Button from './Button';
 import { plus } from '../utilities/Icon';
 
