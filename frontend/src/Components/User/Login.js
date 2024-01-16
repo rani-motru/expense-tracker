@@ -1,4 +1,5 @@
 import { useState } from "react"
+import styled from 'styled-components'
 import { useLogin } from "../../hooks/useLogin"
 
 
@@ -12,11 +13,11 @@ const Login = () => {
         await login(email, password)
     }
     return (
-        <center>
+        <SignStyled>
         <form className="login" onSubmit={handleSubmit}>
             <h3>Sign In</h3>
 
-            <label>Email:</label>
+            <label>Email-id : </label>
             <input
                 type="email"
                 onChange={(e) => setEmail(e.target.value)}
@@ -30,11 +31,34 @@ const Login = () => {
                 value={password}
             />
             <br></br>
-            <button disabled={isLoading}>Enter</button>
+            <center>
+            <button disabled={isLoading}> Enter  </button></center>
             {error && <div className="error">{error}</div>}
         </form>
-        </center>
+       
+        </SignStyled>
     )
 }
 
 export default Login
+
+const SignStyled = styled.div`
+    grid-column: 2 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    .login{
+        background-color: #F596AE;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .login button {
+        margin-top: 15px; 
+        margin-right: auto;
+        padding: 4px;
+        justify-content: center;
+    }
+  
+  `;

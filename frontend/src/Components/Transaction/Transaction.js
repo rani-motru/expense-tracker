@@ -3,8 +3,7 @@ import styled from 'styled-components'
 import { useGlobalContext } from '../../context/globalContext';
 import Transactions from '../../History/Transactions';
 import { InnerLayout } from '../../styles/Layouts';
-import { dollar } from '../../utils/Icons';
-import Chart from '../Chart/Chart';
+
 
 function Transaction() {
     const {totalExpenses,incomes, expenses, totalIncome, totalBalance, getIncomes, getExpenses } = useGlobalContext()
