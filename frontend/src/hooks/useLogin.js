@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useAuthContext } from "./useAuthContext";
 // import { set } from "mongoose";
-const BASE_URL = "https://expense-tracker-v53j-zetc.onrender.com/api/";
+const BASE_URL = "https://expense-tracker-v53j-zetc.onrender.com/";
 
 export const useLogin = () => {
     const [error, setError] = useState(null)
