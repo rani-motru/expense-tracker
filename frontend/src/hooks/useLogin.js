@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useAuthContext } from "./useAuthContext";
 // import { set } from "mongoose";
+const BASE_URL = "https://expense-tracker-v53j-zetc.onrender.com/api/";
 
 export const useLogin = () => {
     const [error, setError] = useState(null)
@@ -9,7 +10,7 @@ export const useLogin = () => {
     const login = async (email, password) => {
         setIsLoading(true)
         setError(null)
-        const response = await fetch('api/user/login', {
+        const response = await fetch(`${BASE_URL}api/user/login`, {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({email, password})

@@ -5,7 +5,7 @@ import { useAuthContext } from "../hooks/useAuthContext"
 
 // const BASE_URL = "http://localhost:5000/api/v1/";
 //const BASE_URL = "http://localhost:3001/api/v1/";
-const BASE_URL = "https://expense-tracker-v53j-zetc.onrender.com/api/v1/";
+const BASE_URL = "https://expense-tracker-v53j-zetc.onrender.com/api/";
 
 
 const GlobalContext = React.createContext()
