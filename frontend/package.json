@@ -1,5 +1,5 @@
 {
-  "proxy": "http://localhost:3001",
+  "proxy": "https://expense-tracker.onrender.com",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
@@ -42,5 +42,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
   }
 }
