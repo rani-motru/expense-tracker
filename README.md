@@ -21,9 +21,18 @@
 ## Trello Link :
   https://trello.com/b/iGH0Mszu/mern
 
-## WireFrame:
+## WireFrame: 
+
+<img src="https://github.com/rani-motru/expense-tracker/blob/main/screenshots/wireFrame.png" width ="500">
+
 ## Flow Chart:
+
+<img src="https://github.com/rani-motru/expense-tracker/blob/main/screenshots/flowChart.png" width ="500">
+
 ## ERD:
+
+<img src="https://github.com/rani-motru/expense-tracker/blob/main/screenshots/ERD.png" width ="500">
+
 ## Deployed Link:
   https://expense-tracker-v53j.onrender.com/
 
