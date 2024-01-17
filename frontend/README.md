@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# EXPENSE-TRACKER:
+ 
+ Simple expense tracker using MERN.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ # FEATURES:
+    Basic features include -
+    Login and SignUp 
+    Income/Expense Transaction
+    EXpense and income Forms
+    Delete Transactions
+    Chart
+    Dashboard
+    Responsive UI 
 
-## Available Scripts
+# Technology used:
+  - MongoDB for database.
+  - Node.js and Express for the backend.
+  - React for Frontend.
 
-In the project directory, you can run:
+  
+## Trello Link :
+  https://trello.com/b/iGH0Mszu/mern
 
-### `npm start`
+## WireFrame:
+## Flow Chart:
+## ERD:
+## Deployed Link:
+  https://expense-tracker-v53j.onrender.com/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## API ENDPOINTS:
+login:
+  https://expense-tracker-v53j-zetc.onrender.com/api/user/login  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+ SignUP:
+   https://expense-tracker-v53j-zetc.onrender.com/api/user/signup  
 
-### `npm test`
+ INCOME :
+  GET: https://expense-tracker-v53j-zetc.onrender.com/api/v1/get-incomes
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  POST: https://expense-tracker-v53j-zetc.onrender.com/api/v1/add-income
+  
+  DELETE:https://expense-tracker-v53j-zetc.onrender.com/api/v1/delete-income/:id
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  EXPENSE :
+  GET: https://expense-tracker-v53j-zetc.onrender.com/api/v1/get-expenses
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  POST: https://expense-tracker-v53j-zetc.onrender.com/api/v1/add-expense
+  
+  DELETE:https://expense-tracker-v53j-zetc.onrender.com/api/v1/delete-expense/:id
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+  ## FUTURE ENHANCEMENTS:
+    - custom avatar for users.
+    - create a plan ,For example if we want to save money for a trip and know the budget, and how much  percent they can 
+      contribute monthly, give them a time frame to save the money.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  ## Acknowledgement:
+     Thanks to my Instructor Christina Takara for teaching.
+      Thanks to my family ,without them i may not be able to do this.
+      finally to freecode camp, Net ninja youtube channel.
